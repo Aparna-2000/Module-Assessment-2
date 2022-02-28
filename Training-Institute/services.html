@@ -1,0 +1,140 @@
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: #2471A3;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:active {
+  background-color: red;
+}
+a:hover{
+background-color:black;
+font-size:115%;
+}
+
+ /* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+</style>
+<body><center>
+<a href = "menu.html"> HOME </a>
+<a href = "nwabout.html"> ABOUT US</a>
+<a href = "contact.html"> CONTACT US</a>
+<a href = "services.html"> SERVICES</a>
+<a href = "feedback.html"> FEEDBACK</a>
+<h1><u><font color="#616161">COURSES WE OFFER</font></u></h1>
+
+<h3><label for="Course">Choose a Course:</label></h3>
+
+ <div class="dropdown">
+<select name="Type of Course" id="courses">
+  <a href="services.html"> <option value="Pre-Recorded Course">Pre-Recorded Courses</option> </a>
+  <option value="Live Course">Live Courses</option></a>
+</select> 
+</div>
+<br><br>
+
+<table>
+<tr>
+<th> Pre-Recorded Courses </th>
+<th> Live Courses </th>
+</tr>
+
+<tr>
+<td>Python</td>
+<td>Web Development</td>
+</tr>
+
+<tr>
+<td>C Programmimg</td>
+<td>Software Development</td>
+</tr>
+
+<tr>
+<td>Java</td>
+<td>Machine Learning</td>
+</tr>
+
+<tr>
+<td>Data Structures</td>
+<td>Artificial Intelligence</td>
+</tr>
+
+<tr>
+<td>GoLang</td>
+<td>Cyber Security</td>
+</tr>
+</table>
+
+</body>
+</html>
+
